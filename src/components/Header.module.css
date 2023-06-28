@@ -1,0 +1,66 @@
+*{
+     margin:0;
+     padding: 0;
+}
+
+.HeaderContainer{
+     background-color: #5d993f     ;
+     height: 160px;
+     display: flex;
+     flex-flow: wrap row;
+     
+}
+
+.logo{
+     height: 1000px;
+     width:  500px;
+}
+
+.HeaderE{
+     display: flex;
+     flex-flow: wrap column;
+     flex:40% ;
+     margin-left: 10%;
+   justify-content: center;
+}
+
+.tel{
+     display: flex;
+     flex-flow: wrap row;
+     justify-content: start;
+     align-items: center;
+     font-size: 17px;
+
+}
+
+.tel p{
+     margin-left: 5px;
+}
+
+.SiteCetep{
+     font-size: 17px;
+}
+
+.HeaderE h1 {
+     font-size: 19px;
+}
+
+.HeaderE img{
+     height: 120px;
+}
+
+.HeaderD{
+     background-color: #59a360;
+     display: flex;
+     flex-flow: wrap row;
+     flex:40% ;
+     margin-right: 10%;
+}
+
+.loc{
+     display: flex;
+     flex-flow: wrap row;
+     justify-content: start;
+     align-items: center;
+     font-size: 17px;
+}
