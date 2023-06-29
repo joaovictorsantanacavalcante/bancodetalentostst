@@ -19,18 +19,21 @@
 .HeaderE{
      display: flex;
      flex-flow: wrap column;
-     flex:40% ;
+     flex:35% ;
      margin-left: 10%;
    justify-content: center;
+   color: #000000;
+   
 }
 
 .tel{
+     
      display: flex;
      flex-flow: wrap row;
      justify-content: start;
      align-items: center;
      font-size: 17px;
-
+     padding: 5px;
 }
 
 .tel p{
@@ -39,6 +42,11 @@
 
 .SiteCetep{
      font-size: 17px;
+     padding: 5px;
+}
+
+.SiteCetep a{
+     color: #000000;
 }
 
 .HeaderE h1 {
@@ -49,18 +57,63 @@
      height: 120px;
 }
 
-.HeaderD{
-     background-color: #59a360;
-     display: flex;
-     flex-flow: wrap row;
-     flex:40% ;
-     margin-right: 10%;
-}
-
 .loc{
      display: flex;
      flex-flow: wrap row;
      justify-content: start;
      align-items: center;
      font-size: 17px;
+     padding: 5px;
+     
+}
+.HeaderD{
+     display: flex;
+     flex-flow: wrap row;
+     flex:35% ;
+     margin-right: 10%;
+     justify-content: end;
+     align-items: center;
+}
+
+
+.loc a{
+     color: rgb(47, 43, 38);
+}
+
+.ContainerListSociais{
+     display: flex;
+     list-style: none;
+     padding: 30px;
+     margin: 0;
+     height: 15px;
+     justify-content: center;
+     align-items: center;
+     color: rgb(6, 6, 6);
+
+}
+
+.ContentListSocias {
+     padding: 20px;
+     
+}
+
+
+
+.ContainerListSociais a {
+     color: rgb(0, 0, 0);
+}
+
+
+.HeaderC{
+     flex: 10%;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(255, 228, 196, 0);
+
+}
+
+.imglogocetep{
+     height:150px ;
 }
