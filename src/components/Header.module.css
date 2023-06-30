@@ -3,12 +3,19 @@
      padding: 0;
 }
 
-.HeaderContainer{
+.HeaderContainer .cabecalho{
      background-color: #5d993f     ;
      height: 160px;
      display: flex;
      flex-flow: wrap row;
-     
+     flex: 50%;
+
+}
+
+.cabecalho{
+     height: 160px;
+     display: flex;
+     flex-flow: wrap row;
 }
 
 .logo{
@@ -22,31 +29,39 @@
      flex:35% ;
      margin-left: 10%;
    justify-content: center;
+   align-items: start;
    color: #000000;
    
 }
 
 .tel{
-     
+     color: #036e03;
+
      display: flex;
      flex-flow: wrap row;
      justify-content: start;
-     align-items: center;
+     align-items: start;
      font-size: 17px;
-     padding: 5px;
+     height: 28px;
 }
 
 .tel p{
-     margin-left: 5px;
+     margin-left: 10px;
+     color: #374e3f;
 }
 
 .SiteCetep{
-     font-size: 17px;
-     padding: 5px;
+     color: #036e03;
+
+     display: flex;
+     flex-flow: wrap row;
+     justify-content: center;
+     align-items: center;
 }
 
 .SiteCetep a{
-     color: #000000;
+     color: #374e3f;
+     margin-left: 10px;
 }
 
 .HeaderE h1 {
@@ -58,12 +73,12 @@
 }
 
 .loc{
+     color: #036e03;
      display: flex;
      flex-flow: wrap row;
      justify-content: start;
      align-items: center;
      font-size: 17px;
-     padding: 5px;
      
 }
 .HeaderD{
@@ -77,7 +92,8 @@
 
 
 .loc a{
-     color: rgb(47, 43, 38);
+     color: #374e3f;
+     margin-left: 10px;
 }
 
 .ContainerListSociais{
@@ -100,7 +116,7 @@
 
 
 .ContainerListSociais a {
-     color: rgb(0, 0, 0);
+     color: #036e03;
 }
 
 
@@ -116,4 +132,51 @@
 
 .imglogocetep{
      height:150px ;
+}
+
+.NavContainer{
+     display: flex;
+     height: 120px;
+     flex-flow: wrap row;
+     background-color: #045c21;
+     justify-content:start;
+     align-items: center;
+
+}
+
+
+.GroupLinks{
+     display: flex;
+     height: 100px;
+     display: flex;
+     flex-flow: wrap row;
+     justify-content:start;
+     align-items: center;
+     flex: 70%;
+}
+
+.GroupLinks a{
+     color: #ffffff;
+}
+
+.IconContainer{
+     display: flex;
+     flex-flow: wrap row ;
+     justify-content: ;
+     align-items: center;
+     justify-content: end;
+     flex: 30%;
+}
+
+.NavContent{
+     margin-left: 10%;
+     margin-right:10% ;
+     display: flex;
+     width: 100%;
+} 
+
+.IconTst{
+    display: flex;
+    height: 90px;
+    align-items: center;
 }

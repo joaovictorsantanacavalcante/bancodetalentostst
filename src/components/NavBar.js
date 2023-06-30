@@ -1,36 +1,70 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import styles from './Header.module.css'
+import LogoTst from '../img/logo-tst.png'
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText,
+} from 'reactstrap';
 
+function NavBar(args) {
+  const [isOpen, setIsOpen] = useState(false);
 
-function NavBar () {
-     return (
-          <>
-               <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                 <div class="container-fluid">
-                   <a class="navbar-brand" href="#">Navbar w/ text</a>
-                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                   </button>
-                   <div class="collapse navbar-collapse" id="navbarText">
-                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                       <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                       </li>
-                       <li class="nav-item">
-                         <a class="nav-link" href="#">Features</a>
-                       </li>
-                       <li class="nav-item">
-                         <a class="nav-link" href="#">Pricing</a>
-                       </li>
-                     </ul>
-                     <span class="navbar-text">
-                       Navbar text with an inline element
-                     </span>
-                   </div>
-                 </div>
-               </nav>
-          </>
-     )
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div className={styles.NavContainer}>
+      <Nav className={styles.NavContent} > 
+        <div className={styles.GroupLinks}> 
+          <NavItem>
+            <NavLink
+              active
+              href="#"
+            >
+              HOME
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">
+              PRATICAS
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              href="#"
+            >
+              ESTAGIOS
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              href="#"
+            >
+              BANCO DE TALENTOS
+            </NavLink>
+          </NavItem>
+          
+        </div>
+
+        <div className={styles.IconContainer}>
+        <NavItem>
+            <NavLink>
+              <img className={styles.IconTst} src={LogoTst} alt="cu" />
+            </NavLink>
+          </NavItem>
+        </div>
+
+      </Nav>
+    </div>
+  );
 }
-
-
-export default NavBar
+export default NavBar;
